@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.keybtn {
+    margin: 5px 0px 5px 0px;
+    padding: 2px;
+    display: block;
+    font-size: xx-small;
+    font-style: italic;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: medium;
+}
+
+.piano {
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+}
+
+.white-key {
+    width: 60px;
+    height: 240px;
+    background-color: #fff;
+    border: 4px solid black;
+    border-radius: 0 0 6px 6px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 160px;
+}
+
+.white-key.active {
+    background-color: #c0c0c0;
+}
+
+.black-key {
+    position: absolute;
+    width: 45px;
+    height: 160px;
+    background-image: linear-gradient(#000000, #3b3b3b);
+    border: 3px solid black;
+    border-radius: 0 0 3px 3px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding-top: 80px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.black-key.active {
+    background-image: linear-gradient(#000000, #000000);
+    border-color: #3b3b3b;
+}
+
+.Ab3-key {
+    left: 31px;
+}
+
+.Bb3-key {
+    left: 88px;
+}
+
+.Db4-key {
+    left: 200px;
+}
+
+.Eb4-key {
+    left: 255px;
+}
+
+.Gb4-key {
+    left: 367px;
+}
+
+.Ab4-key {
+    left: 424px;
+}
+
+.Bb4-key {
+    left: 480px;
+}
+
+.Db5-key {
+    left: 592px;
+}
+
+.Eb5-key {
+    left: 648px;
+}
+
+
+/* Logo and Icon */
+
+.piano-logo {
+    position: fixed;
+    width: 100px;
+    top: 16px;
+    left: 16px;
+}
+
+.tuner-icon {
+    position: fixed;
+    width: 60px;
+    top: 16px;
+    right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .hideMobile {
+        display: none;
+    }
+    .keybtn {
+        display: none;
+    }
+    .white-key {
+        width: 40px;
+        height: 160px;
+        font-size: 16px;
+        padding-top: 120px;
+    }
+    .black-key {
+        position: absolute;
+        width: 30px;
+        height: 100px;
+        font-size: 10px;
+        padding-top: 70px;
+    }
+    .Db4-key {
+        left: 19px;
+    }
+    .Eb4-key {
+        left: 55px;
+    }
+    .Gb4-key {
+        left: 127px;
+    }
+    .Ab4-key {
+        left: 163px;
+    }
+    .Bb4-key {
+        left: 199px;
+    }
+    .Db5-key {
+        left: 271px;
+    }
+    .Eb5-key {
+        left: 306px;
+    }
+    /* Logo */
+    .meter {
+        width: 100%;
+    }
+    .notes {
+        width: 100%;
+    }
+    .minus {
+        left: 10%;
+        top: 25%;
+        font-size: 40px;
+    }
+    .plus {
+        float: center;
+        right: 10%;
+        top: 25%;
+        font-size: 40px;
+    }
+    /* Logo and Icon on mobile */
+    .piano-logo {
+        width: 70px;
+        top: 10px;
+        left: 10px;
+    }
+    .tuner-icon {
+        position: fixed;
+        width: 40px;
+        top: 10px;
+        right: 10px;
+    }
+}
